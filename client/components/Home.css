@@ -12,6 +12,10 @@ body {
   padding: 32px;
 }
 
+.navbar{
+  text-align: center;
+}
+
 .row {
   display: -ms-flexbox; /* IE10 */
   display: flex;
@@ -40,6 +44,43 @@ body {
 
 .icon-button {
   cursor: pointer;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: spin 2s linear infinite;
+}
+
+.route-button {
+  border: none;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.like-amount {
+  text-align: center;
+  font-size: 30px;
+}
+
+@keyframes spin {
+  0%  { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */

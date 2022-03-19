@@ -31,4 +31,9 @@ const handleLike = (url, action) => {
   )
 }
 
+const findLiked = () => {
+  return Picture.find().sort({likes: -1}).limit(40).exec();
+}
+
 module.exports.handleLike = handleLike;
+module.exports.findLiked = findLiked;
