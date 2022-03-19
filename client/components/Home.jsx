@@ -28,7 +28,7 @@ class Home extends React.Component {
   render() {
     return (
       <>
-        <h1 className="header">Home</h1>
+        <h1 className="header">Animal Gallery</h1>
         <NavBar />
         <div className="row">
           <div className="column">
